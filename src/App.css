@@ -8,6 +8,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -76,8 +77,26 @@ html, body, #root {
   font-family: var(--Uifont);
 }
 
+.gridblock-desc {
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+}
+
+.gridblock-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.img-div {
+  display: flex;
+}
+
 .gridblock-img {
   width: 100%;
+  object-fit: cover;
+  flex: 1;
 }
 
 .my-work {
@@ -90,5 +109,33 @@ html, body, #root {
 
 .my-work-grid {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.desc-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-btn-cont {
+  display:flex;
+}
+.gridblock-btns {
+  display: flex;
+  max-width: 30px;
+  max-height: 30px;
+  min-height: 25px;
+  min-width: 25px;
+  border: 0;
+  background: inherit;
+}
+
+.desc-header {
+  font-family: var(--txtFont);
+  font-weight: lighter;
+}
+
+.card-desc {
+  font-size:14px;
 }
