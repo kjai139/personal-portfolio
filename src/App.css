@@ -33,7 +33,7 @@ html, body, #root {
   
 }
 
-.about-me, .my-work {
+.about-me, .my-work, .contact-me {
   display:flex;
   padding: 30px;
   max-width: 800px;
@@ -79,8 +79,10 @@ html, body, #root {
 
 .gridblock-desc {
   background-color: white;
-  flex: 1;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .gridblock-container {
@@ -116,6 +118,7 @@ html, body, #root {
 .desc-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .grid-btn-cont {
@@ -123,19 +126,50 @@ html, body, #root {
 }
 .gridblock-btns {
   display: flex;
-  max-width: 30px;
-  max-height: 30px;
-  min-height: 25px;
-  min-width: 25px;
+  max-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  min-width: 24px;
   border: 0;
-  background: inherit;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-size: contain;
+  background-position: center;
 }
 
 .desc-header {
   font-family: var(--txtFont);
-  font-weight: lighter;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .card-desc {
   font-size:14px;
+  font-weight: lighter;
+}
+
+.contact-icons {
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.contact-phone, .contact-email {
+  display:flex;
+  align-items: center;
+}
+
+.contact-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.contact-me-left, .contact-me-right {
+  background-color: white;
+  
+}
+
+.contact-me-right {
+  display: flex;
+  flex: 1;
 }
